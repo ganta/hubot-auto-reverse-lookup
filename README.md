@@ -1,5 +1,4 @@
 # hubot-auto-reverse-lookup
-[![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage Status][coveralls-image]][coveralls-url]
 
 Reverse DNS lookups automatically.
 
@@ -9,7 +8,7 @@ See [`src/auto-reverse-lookup.coffee`](src/auto-reverse-lookup.coffee) for full 
 
 In hubot project repo, run:
 
-`npm install hubot-auto-reverse-lookup --save`
+`npm install --save https://github.com/ganta/hubot-auto-reverse-lookup/tarball/v1.0.0`
 
 Then add **hubot-auto-reverse-lookup** to your `external-scripts.json`:
 
@@ -20,15 +19,6 @@ Then add **hubot-auto-reverse-lookup** to your `external-scripts.json`:
 ## Sample Interaction
 
 ```
-user1>> hubot hello
-hubot>> hello!
+user1>> Configure your network settings to use the IP addresses 8.8.8.8 as your DNS servers.
+hubot>> 8.8.8.8 -> google-public-dns-a.google.com
 ```
-
-[npm-url]: https://npmjs.org/package/hubot-auto-reverse-lookup
-[npm-image]: http://img.shields.io/npm/v/hubot-auto-reverse-lookup.svg?style=flat
-[travis-url]: https://travis-ci.org/Hideki IGARASHI/hubot-auto-reverse-lookup
-[travis-image]: http://img.shields.io/travis/Hideki IGARASHI/hubot-auto-reverse-lookup/master.svg?style=flat
-[daviddm-url]: https://david-dm.org/Hideki IGARASHI/hubot-auto-reverse-lookup.svg?theme=shields.io
-[daviddm-image]: http://img.shields.io/david/Hideki IGARASHI/hubot-auto-reverse-lookup.svg?style=flat
-[coveralls-url]: https://coveralls.io/r/Hideki IGARASHI/hubot-auto-reverse-lookup
-[coveralls-image]: http://img.shields.io/coveralls/Hideki IGARASHI/hubot-auto-reverse-lookup/master.svg?style=flat
