@@ -1,7 +1,7 @@
 {
   "name": "hubot-auto-reverse-lookup",
   "description": "Reverse DNS lookups automatically.",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "author": "Hideki IGARASHI <hideki.develop@gmail.com>",
   "license": "MIT",
 
