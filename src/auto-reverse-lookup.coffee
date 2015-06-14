@@ -1,22 +1,25 @@
-# Description
+# Description:
 #   Reverse DNS lookups automatically.
 #
 # Configuration:
-#   LIST_OF_ENV_VARS_TO_SET
+#   None
 #
 # Commands:
-#   hubot hello - <what the respond trigger does>
-#   orly - <what the hear trigger does>
-#
-# Notes:
-#   <optional notes required for the script>
+#   <IPv4 Address> - Reverse DNS lookups automatically for given address
 #
 # Author:
-#   Hideki IGARASHI[@<org>]
+#   Hideki IGARASHI <hideki.develop@gmail.com>
+
+dns = require 'dns'
 
 module.exports = (robot) ->
-  robot.respond /hello/, (msg) ->
-    msg.reply "hello!"
 
-  robot.hear /orly/, ->
-    msg.send "yarly"
+  robot.hear /((?:(?:25[0-5]|2[0-4]\d|1?\d{1,2})\.){3}(?:25[0-5]|2[0-4]\d|1?\d{1,2}))/, (res) ->
+    ipv4addr = res.match[1]
+
+    dns.reverse ipv4addr, (err, hostname) ->
+      if err
+        res.send "Cannot resolve #{ipv4addr}: #{err}"
+        return
+
+      res.send "#{ipv4addr} -> #{hostname}"
