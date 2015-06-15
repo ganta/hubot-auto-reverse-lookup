@@ -8,7 +8,7 @@ See [`src/auto-reverse-lookup.coffee`](src/auto-reverse-lookup.coffee) for full 
 
 In hubot project repo, run:
 
-`npm install --save https://github.com/ganta/hubot-auto-reverse-lookup/tarball/v1.0.0`
+`npm install --save https://github.com/ganta/hubot-auto-reverse-lookup/tarball/v1.0.1`
 
 Then add **hubot-auto-reverse-lookup** to your `external-scripts.json`:
 
