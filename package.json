@@ -4,9 +4,10 @@
   "version": "1.0.0",
   "author": "Hideki IGARASHI <hideki.develop@gmail.com>",
   "license": "MIT",
-
-  "keywords": ["hubot","hubot-scripts"],
-
+  "keywords": [
+    "hubot",
+    "hubot-scripts"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/ganta/hubot-auto-reverse-lookup.git"
@@ -15,7 +16,8 @@
     "url": "https://github.com/ganta/hubot-auto-reverse-lookup/issues"
   },
   "dependencies": {
-    "coffee-script": "1.9.3"
+    "coffee-script": "1.9.3",
+    "ip": "0.3.3"
   },
   "devDependencies": {
     "boolify-string": "0.1.0",
